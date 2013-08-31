@@ -134,7 +134,11 @@ def SendEmailAlert(GPIONumber):
         msg['Subject'] = 'Alarm Notification' #Configure to whatever subject line you want
         
         # Send the message via an SMTP server
-        s = smtplib.SMTP(smtp_server)
+        #s = smtplib.SMTP(smtp_server)
+        s = smtplib.SMTP("smtp.gmail.com",587)
+        s.ehlo()
+        s.starttls()
+        s.ehlo()
         s.login(smtp_user,smtp_pass)
         s.sendmail(addr_from, addr_to, msg.as_string())
         s.quit()
