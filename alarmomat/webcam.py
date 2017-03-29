@@ -18,8 +18,8 @@ global password
 global PrintToScreen 
 
 #User and password that has been registered on www.privateeyepi.com website
-user="alexanderkraft1979@googlemail.com"     #Enter email address here
-password="hirsch2myprivateeyepi" #Enter password here
+user="admin"     #Enter email address here
+password="1234" #Enter password here
 
 # Set this to True if you want to send outputs to the screen
 # This is useful for debugging
