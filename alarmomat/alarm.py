@@ -42,7 +42,7 @@ global SirenPollInterval
 
 #User and password that has been registered on www.privateeyepi.com website
 user="alexanderkraft1979@googlemail.com"     #Enter email address here
-password="hirsch2myprivateeyepi" #Enter password here
+password="1234" #Enter password here
 
 # If you want to receive email alerts define SMTP email server details
 # This is the SMTP server, username and password trequired to send email through your internet service provider
@@ -73,7 +73,8 @@ def fileexists(filename):
     try:
        with open(filename): pass
     except IOError:
-       return False     return True
+       return False 
+    return True
 
 def GetTemperature():
     #Routine to read the temperature
