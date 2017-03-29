@@ -13,8 +13,8 @@ global user
 global password
 
 # Usr and password that has been registered on www.privateeyepi.com website
-user="alexanderkraft1979@googlemail.com"
-password="hirsch2myprivateeyepi"
+user="admin"
+password="1234"
        
 def isNumber(x):
     # Test whether the contents of a string is a number
